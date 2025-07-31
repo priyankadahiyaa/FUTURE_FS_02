@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-KART</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+
+  <style>
+    body {
+      background-color: #f1f3f6;
+    }
+    .navbar {
+      background-color: #2874f0;
+    }
+    .navbar-brand, .nav-link, .form-control {
+      color: white !important;
+    }
+    .product-card img {
+      height: 150px;
+      object-fit: contain;
+    }
+    .footer {
+      background-color: #172337;
+      color: white;
+      padding: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">E-KART</a>
+    <form class="d-flex mx-auto" style="width: 50%;">
+      <input class="form-control me-2" type="search" placeholder="Search for products, brands and more" aria-label="Search">
+    </form>
+    <ul class="navbar-nav ms-auto">
+  <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+  <li class="nav-item"><a class="nav-link" href="#smartphones">Smartphones</a></li>
+  <li class="nav-item"><a class="nav-link" href="#help-support">Help&Support</a></li>
+  <li class="nav-item"><a class="nav-link" href="#grocery">Grocery</a></li>
+  <li class="nav-item"><a class="nav-link" href="#footwear">Footwear</a></li>
+  <li class="nav-item"><a class="nav-link" href="#fashion">Fashion</a></li>
+  <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+
+</ul>
+
+  </div>
+</nav>
+
+<!-- Full-Width Medium-Height Banner with Animation -->
+<div class="container-fluid px-0 my-5">
+  <img src="imagess/photo.png/pexels-omar-markhieh-637410-1447252.jpg" 
+       alt="Animated Banner" 
+       class="w-100 animated-banner"
+       style="height: 300px; object-fit: cover;">
+</div>
+
+<!-- Categories -->
+<div class="container mb-4">
+  <div class="row text-center g-4">
+    <div class="col"><img src="imagess/photo.png/image1.png" class="rectangle" /><p>Electronics</p></div>
+    <div class="col"><img src="imagess/photo.png/imagec.png" class="rectangle" /><p>Clothing</p></div>
+    <div class="col"><img src="imagess/photo.png/imagef.png" class="rectangle" /><p>Furniture</p></div>
+    <div class="col"><img src="imagess/photo.png/images.png" class="rectangle" /><p>Footwear</p></div>
+    <div class="col"><img src="imagess/photo.png/imageg.png" class="rectangle" /><p>Grocery</p></div>
+  </div>
+</div>
+
+<!-- Product Section -->
+<div class="container">
+  <h4 class="mb-4">Top Deals</h4>
+  <div class="row g-4">
+    <div class="col-md-3">
+      <div class="card product-card">
+        <img src="imagess/photo.png/imagep.png" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h6 class="card-title">Smartphone</h6>
+          <p class="card-text text-success">₹14,999</p>
+          <button class="btn btn-sm btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card product-card">
+        <img src="imagess/photo.png/imageL.png" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h6 class="card-title">Laptop</h6>
+          <p class="card-text text-success">₹49,999</p>
+          <button class="btn btn-sm btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card product-card">
+        <img src="imagess/photo.png/imageH.png" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h6 class="card-title">Headphones</h6>
+          <p class="card-text text-success">₹1,999</p>
+          <button class="btn btn-sm btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card product-card">
+        <img src="imagess/photo.png/imageW.png" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h6 class="card-title">Smart Watch</h6>
+          <p class="card-text text-success">₹3,499</p>
+          <button class="btn btn-sm btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 1. Today’s Offers (Horizontal Scroll) -->
+<div class="container my-5">
+  <h4 class="mb-3">Today's Offers</h4>
+  <div class="d-flex overflow-auto">
+    <div class="card me-3" style="min-width: 200px;">
+      <img src="imagess/photo.png/imageO.png" class="card-img-top" alt="...">
+      <div class="card-body p-2 text-center">
+        <h6 class="card-title">50% Off</h6>
+        <p class="text-success">Limited Time</p>
+      </div>
+    </div>
+    <div class="card me-3" style="min-width: 200px;">
+      <img src="imagess/photo.png/imageB.png" class="card-img-top" alt="...">
+      <div class="card-body p-2 text-center">
+        <h6 class="card-title">Buy 1 Get 1</h6>
+        <p class="text-success">Today Only</p>
+      </div>
+    </div>
+    <div class="card me-3" style="min-width: 200px;">
+      <img src="imagess/photo.png/imageE.png" class="card-img-top" alt="...">
+      <div class="card-body p-2 text-center">
+        <h6 class="card-title">Flat ₹500 Off</h6>
+        <p class="text-success">On Electronics</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Grocery Section -->
+<div class="container my-5">
+  <div class="container my-5" id="grocery"></div>
+  <h4 class="mb-4 fw-bold">Grocery Essentials</h4>
+  <div class="row g-4">
+
+    <!-- Rice -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image2.png" class="card-img-top" alt="Rice">
+        <div class="card-body text-center">
+          <h6 class="card-title">Basmati Rice 5kg</h6>
+          <p class="text-success fw-bold">₹399</p>
+          <button class="btn btn-success btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cooking Oil -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image3.png" class="card-img-top" alt="Cooking Oil">
+        <div class="card-body text-center">
+          <h6 class="card-title">Sunflower Oil 1L</h6>
+          <p class="text-success fw-bold">₹130</p>
+          <button class="btn btn-success btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fruits -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image4.png" class="card-img-top" alt="Fruits">
+        <div class="card-body text-center">
+          <h6 class="card-title">Fresh Fruits Combo</h6>
+          <p class="text-success fw-bold">₹299</p>
+          <button class="btn btn-success btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Milk -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image5.png" class="card-img-top" alt="Milk">
+        <div class="card-body text-center">
+          <h6 class="card-title">Toned Milk 1L</h6>
+          <p class="text-success fw-bold">₹55</p>
+          <button class="btn btn-success btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Furniture Section -->
+<div class="container my-5">
+  <h4 class="mb-4 fw-bold">Stylish Furniture</h4>
+  <div class="row g-4">
+
+    <!-- Sofa -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image6.png" class="card-img-top" alt="Sofa">
+        <div class="card-body text-center">
+          <h6 class="card-title">3-Seater Sofa</h6>
+          <p class="text-success fw-bold">₹18,999</p>
+          <button class="btn btn-warning btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bed -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image7.png" class="card-img-top" alt="Bed">
+        <div class="card-body text-center">
+          <h6 class="card-title">Queen Size Bed</h6>
+          <p class="text-success fw-bold">₹24,499</p>
+          <button class="btn btn-warning btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dining Table -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image8.png" class="card-img-top" alt="Dining Table">
+        <div class="card-body text-center">
+          <h6 class="card-title">6-Seater Dining Table</h6>
+          <p class="text-success fw-bold">₹15,299</p>
+          <button class="btn btn-warning btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wardrobe -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image9.png" class="card-img-top" alt="Wardrobe">
+        <div class="card-body text-center">
+          <h6 class="card-title">Wooden Wardrobe</h6>
+          <p class="text-success fw-bold">₹11,499</p>
+          <button class="btn btn-warning btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Clothes Section -->
+<div class="container my-5" id="fashion"></div>
+  <h4 class="mb-4 fw-bold">Fashion & Clothing</h4>
+  <div class="row g-4">
+
+    <!-- T-Shirt -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image10.png" class="card-img-top" alt="T-Shirt">
+        <div class="card-body text-center">
+          <h6 class="card-title">Men's Cotton T-Shirt</h6>
+          <p class="text-success fw-bold">₹499</p>
+          <button class="btn btn-danger btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jeans -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image11.png" class="card-img-top" alt="Jeans">
+        <div class="card-body text-center">
+          <h6 class="card-title">Denim Slim Fit Jeans</h6>
+          <p class="text-success fw-bold">₹1,199</p>
+          <button class="btn btn-danger btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dress -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image12.png" class="card-img-top" alt="Dress">
+        <div class="card-body text-center">
+          <h6 class="card-title">Women's Floral Dress</h6>
+          <p class="text-success fw-bold">₹899</p>
+          <button class="btn btn-danger btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jacket -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image13.png" class="card-img-top" alt="Jacket">
+        <div class="card-body text-center">
+          <h6 class="card-title">Unisex Winter Jacket</h6>
+          <p class="text-success fw-bold">₹1,599</p>
+          <button class="btn btn-danger btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Shoes Section -->
+<div class="container my-5">
+  <div class="container my-5" id="footwear"></div>
+  <h4 class="mb-4 fw-bold">Trending Footwear</h4>
+  <div class="row g-4">
+
+    <!-- Sports Shoes -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image14.png" class="card-img-top" alt="Sports Shoes">
+        <div class="card-body text-center">
+          <h6 class="card-title">Men's Sports Shoes</h6>
+          <p class="text-success fw-bold">₹1,499</p>
+          <button class="btn btn-dark btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Running Shoes -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image15.png" class="card-img-top" alt="Running Shoes">
+        <div class="card-body text-center">
+          <h6 class="card-title">Women's Running Shoes</h6>
+          <p class="text-success fw-bold">₹1,199</p>
+          <button class="btn btn-dark btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sneakers -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image16.png" class="card-img-top" alt="Sneakers">
+        <div class="card-body text-center">
+          <h6 class="card-title">Stylish Sneakers</h6>
+          <p class="text-success fw-bold">₹1,799</p>
+          <button class="btn btn-dark btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formal Shoes -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image17.png" class="card-img-top" alt="Formal Shoes">
+        <div class="card-body text-center">
+          <h6 class="card-title">Men's Formal Shoes</h6>
+          <p class="text-success fw-bold">₹2,299</p>
+          <button class="btn btn-dark btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Top Brands Section -->
+<div class="container my-5">
+  <h4 class="mb-4 text-center fw-bold">Top Brands on Flipkart</h4>
+  <div class="row g-4 justify-content-center">
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class="p-3 border rounded shadow-sm bg-white brand-box">
+        <img src="imagess/photo.png/image18.png" class="img-fluid" alt="Samsung Logo">
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class="p-3 border rounded shadow-sm bg-white brand-box">
+        <img src="imagess/photo.png/image19.png" class="img-fluid" alt="Apple Logo">
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class="p-3 border rounded shadow-sm bg-white brand-box">
+        <img src="imagess/photo.png/image20.png" class="img-fluid" alt="OnePlus Logo">
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class="p-3 border rounded shadow-sm bg-white brand-box">
+        <img src="imagess/photo.png/image21.png" class="img-fluid" alt="HP Logo">
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class="p-3 border rounded shadow-sm bg-white brand-box">
+        <img src="https://1000logos.net/wp-content/uploads/2017/03/LG-Logo.png" class="img-fluid" alt="LG Logo">
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class="p-3 border rounded shadow-sm bg-white brand-box">
+        <img src="imagess/photo.png/image22.png" class="img-fluid" alt="Sony Logo">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Smartphones & Electronics Section -->
+<div class="container my-5">
+  <h4 class="mb-4 fw-bold">Smartphones & Electronics</h4>
+  <div class="row g-4">
+
+    <!-- Smartphone -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="container" id="smartphones"></div>
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image23.png" class="card-img-top" alt="Smartphone">
+        <div class="card-body text-center">
+          <h6 class="card-title">Redmi Note 12</h6>
+          <p class="text-success fw-bold">₹12,999</p>
+          <button class="btn btn-primary btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Laptop -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image24.png" class="card-img-top" alt="Laptop">
+        <div class="card-body text-center">
+          <h6 class="card-title">HP 15s Ryzen 5</h6>
+          <p class="text-success fw-bold">₹42,499</p>
+          <button class="btn btn-primary btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Smartwatch -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image25.png" class="card-img-top" alt="Smartwatch">
+        <div class="card-body text-center">
+          <h6 class="card-title">Noise ColorFit Pro 4</h6>
+          <p class="text-success fw-bold">₹2,999</p>
+          <button class="btn btn-primary btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Headphones -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="imagess/photo.png/image26.png" class="card-img-top" alt="Headphones">
+        <div class="card-body text-center">
+          <h6 class="card-title">boAt Rockerz 450</h6>
+          <p class="text-success fw-bold">₹1,299</p>
+          <button class="btn btn-primary btn-sm">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 2. Best of Electronics -->
+<div class="container my-5">
+  <h4 class="mb-4">Best of Electronics</h4>
+  <div class="row g-4">
+    <div class="col-md-3">
+      <div class="card">
+        <img src="imagess/photo.png/image27.png" class="card-img-top" alt="Camera">
+        <div class="card-body text-center">
+          <h6 class="card-title">DSLR Camera</h6>
+          <p class="text-success">₹25,000</p>
+          <button class="btn btn-sm btn-outline-primary">View</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="imagess/photo.png/image28.png" class="card-img-top" alt="Printer">
+        <div class="card-body text-center">
+          <h6 class="card-title">Wireless Printer</h6>
+          <p class="text-success">₹7,500</p>
+          <button class="btn btn-sm btn-outline-primary">View</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="imagess/photo.png/image29.png" class="card-img-top" alt="Monitor">
+        <div class="card-body text-center">
+          <h6 class="card-title">LED Monitor</h6>
+          <p class="text-success">₹11,999</p>
+          <button class="btn btn-sm btn-outline-primary">View</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="imagess/photo.png/image30.png" class="card-img-top" alt="Powerbank">
+        <div class="card-body text-center">
+          <h6 class="card-title">20,000mAh Powerbank</h6>
+          <p class="text-success">₹1,299</p>
+          <button class="btn btn-sm btn-outline-primary">View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3. Customer Testimonials Carousel -->
+<div class="container my-5">
+  <h4 class="mb-4">What Our Customers Say</h4>
+  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner bg-light p-4 rounded">
+      <div class="carousel-item active text-center">
+        <p>"Great experience! Fast delivery and good packaging."</p>
+        <h6 class="text-primary">– Riya S.</h6>
+      </div>
+      <div class="carousel-item text-center">
+        <p>"Huge variety of products. The mobile section is top-notch!"</p>
+        <h6 class="text-primary">– Aman K.</h6>
+      </div>
+      <div class="carousel-item text-center">
+        <p>"Customer support was helpful and responsive."</p>
+        <h6 class="text-primary">– Neha D.</h6>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+<!-- Help & Support Section -->
+<div class="container my-5">
+  <div class="container my-5" id="help-support">
+  <h4 class="mb-4 fw-bold text-center">Help & Support</h4>
+  <div class="row g-4">
+
+    <!-- Contact Us -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body text-center">
+          <i class="bi bi-telephone-fill fs-2 text-primary"></i>
+          <h6 class="mt-3">Customer Care</h6>
+          <p>Call us at: <br><strong>1800-123-4567</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Email Support -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body text-center">
+          <i class="bi bi-envelope-fill fs-2 text-success"></i>
+          <h6 class="mt-3">Email Support</h6>
+          <p>Send your queries to: <br><strong>support@E-KART.com</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body text-center">
+          <i class="bi bi-question-circle-fill fs-2 text-warning"></i>
+          <h6 class="mt-3">FAQs</h6>
+          <p>Find answers to common questions on <a href="#" class="text-decoration-none">our FAQ page</a>.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 4. Download App Promo Section -->
+<div class="container my-5 p-4 bg-primary text-white rounded">
+  <div class="row align-items-center">
+    <div class="col-md-8">
+      <h4>Download the E-KART App</h4>
+      <p>Shop faster and easier with our mobile app!</p>
+    </div>
+    <div class="col-md-4 text-end">
+      <button class="btn btn-light me-2">Google Play</button>
+      <button class="btn btn-light">App Store</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. Newsletter Signup -->
+<div class="container my-5">
+  <div class="p-4 bg-light rounded text-center">
+    <h5 class="mb-3">Subscribe to Our Newsletter</h5>
+    <form class="row g-2 justify-content-center">
+      <div class="col-auto">
+        <input type="email" class="form-control" placeholder="Enter your email">
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-primary">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h6>About</h6>
+        <p>E-KART for demo purposes using Bootstrap. Explore the best deals online.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="col-md-3">
+  <h6>Help</h6>
+  <ul class="list-unstyled">
+    <li><a href="#contact" class="text-white text-decoration-none">Contact Us</a></li>
+    <li><a href="FAQ" class="text-white text-decoration-none">FAQ</a></li>
+    <li><a href="Returns" class="text-white text-decoration-none">Returns</a></li>
+  </ul>
+</div>
+
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <div class="col-md-3">
+  <h6>Policy</h6>
+  <ul class="list-unstyled">
+    <li><a href="#" class="text-white text-decoration-none">ReturnPolicy</a></li>
+    <li><a href="#" class="text-white text-decoration-none">TermsofUse</a></li>
+    <li><a href="#" class="text-white text-decoration-none">Privacy</a></li>
+  </ul>
+</div>
+
+        </ul>
+      </div>
+      <div class="col-md-3">
+        
+  <h6>Social</h6>
+  <ul class="list-unstyled">
+    <li><a href="https://www.facebook.com/" target="_blank" class="text-white text-decoration-none">Facebook</a></li>
+    <li><a href="https://twitter.com/" target="_blank" class="text-white text-decoration-none">Twitter</a></li>
+    <li><a href="https://www.instagram.com/" target="_blank" class="text-white text-decoration-none">Instagram</a></li>
+  </ul>
+</div>
+
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <p class="text-center">© 2025 Flipkart Clone. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
